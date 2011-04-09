@@ -31,7 +31,7 @@ import org.json.JSONException;
 import face4j.exception.FaceClientException;
 import face4j.model.Photo;
 
-public class PhotoResponseImpl extends LimitsResponseImpl implements PhotoResponse
+public class PhotoResponseImpl extends AbstractResponse implements PhotoResponse
 {	
 	private final List<Photo> photos;
 
