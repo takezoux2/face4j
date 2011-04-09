@@ -30,7 +30,7 @@ import org.json.JSONObject;
 
 import face4j.exception.FaceClientException;
 
-public class LimitsResponseImpl extends AbstractResponse implements LimitsResponse
+public class LimitsResponseImpl extends AbstractResponse implements Limits
 {
 	private String restTimeString;
 

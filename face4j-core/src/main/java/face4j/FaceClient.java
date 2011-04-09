@@ -35,7 +35,7 @@ import face4j.model.RemovedTag;
 import face4j.model.SavedTag;
 import face4j.model.UserStatus;
 import face4j.response.GroupResponse;
-import face4j.response.LimitsResponse;
+import face4j.response.Limits;
 import face4j.response.TrainResponse;
 import face4j.response.UsersResponse;
 /**
@@ -315,7 +315,7 @@ public interface FaceClient
 	 * @throws FaceServerException
 	 * @throws FaceClientException
 	 */
-	public LimitsResponse limits () throws FaceClientException, FaceServerException;
+	public Limits getLimits () throws FaceClientException, FaceServerException;
 	
 	/**
 	 * Get a {@code List<{@link Namespace}>} associated with your API key

@@ -40,7 +40,7 @@ import face4j.model.SavedTag;
 import face4j.model.UserStatus;
 import face4j.response.GroupResponse;
 import face4j.response.GroupResponseImpl;
-import face4j.response.LimitsResponse;
+import face4j.response.Limits;
 import face4j.response.LimitsResponseImpl;
 import face4j.response.NamespaceResponse;
 import face4j.response.NamespaceResponseImpl;
@@ -414,10 +414,10 @@ h	 * @see {@link FaceClient#detect(URL)}
 	/**
 	 * @see {@link FaceClient#usage()}
 	 */
-	public LimitsResponse limits () throws FaceClientException, FaceServerException
+	public Limits getLimits () throws FaceClientException, FaceServerException
 	{
 		final String json = executePost(Api.LIMITS, new Parameters());
-		final LimitsResponse response = new LimitsResponseImpl(json);
+		final Limits response = new LimitsResponseImpl(json);
 		
 		return response;
 	}
