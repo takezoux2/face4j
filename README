@@ -20,7 +20,7 @@ Modules:
 ---------------------------------------------------------------------------
  ADDING TO PROJECTS
 - - - - - - - - - - -
-.:maven:. now you may add face4j as a dependency to your maven project by adding the following to your op
+.:maven:. now you may add face4j as a dependency to your maven project by adding the following to your pom.xml
 
 	<dependency>
 		<groupId>org.face4j</groupId>
