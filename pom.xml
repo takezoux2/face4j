@@ -32,11 +32,9 @@
 		<roles>
 			<role>developer</role>
         </roles>
-		<timezone>PST</timezone>
-		
-		</developer>
-		
-		</developers>
+		<timezone>PST</timezone>	
+	</developer>	
+  </developers>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -87,7 +85,7 @@
         </executions>
       </plugin>
 	  </plugins>
-</build>
+  </build>
   <modules>
     <module>face4j-core</module>
     <module>face4j-examples</module>
