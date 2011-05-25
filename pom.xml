@@ -7,10 +7,19 @@
   <version>1.5.2</version>
   <packaging>pom</packaging>
   <name>face4j</name>
-
-  
   <description>parent pom</description>
   <url>https://github.com/mhendred/face4j</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <issueManagement>
+  	<system>github</system>
+  	<url>https://github.com/mhendred/face4j/issues</url>
+  </issueManagement>
   <developers>
   	<developer>
   		<id>mhendred</id>
@@ -28,8 +37,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <scm>
+  	<connection>git://github.com/mhendred/face4j.git</connection>
+  	<developerConnection>git://github.com/mhendred/face4j.git</developerConnection>
   	<tag>1.5.2</tag>
-  	<url>git://github.com/mhendred/face4j.git</url>
+  	<url>https://github.com/mhendred/face4j</url>
   </scm>
   <build>
         <defaultGoal>install</defaultGoal>
@@ -57,6 +68,19 @@
             <include>**/*Tests.java</include>
           </includes>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
 	  </plugins>
 </build>

@@ -15,6 +15,13 @@
   <packaging>jar</packaging>
   <description>A Java client for face.com's REST api</description>
   <url>https://github.com/mhendred/face4j</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
   <dependencies>
     <dependency>
     	<groupId>commons-lang</groupId>
@@ -22,24 +29,9 @@
     	<version>2.6</version>
     </dependency>
     <dependency>
-    	<groupId>org.apache.james</groupId>
-    	<artifactId>apache-mime4j</artifactId>
-    	<version>0.6.1</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.apache.httpcomponents</groupId>
-    	<artifactId>httpclient</artifactId>
-    	<version>4.0.3</version>
-    </dependency>
-    <dependency>
     	<groupId>org.apache.httpcomponents</groupId>
     	<artifactId>httpmime</artifactId>
     	<version>4.0.3</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.slf4j</groupId>
-    	<artifactId>slf4j-api</artifactId>
-    	<version>1.6.1</version>
     </dependency>
     <dependency>
     	<groupId>org.json</groupId>
@@ -57,11 +49,6 @@
     	<artifactId>junit</artifactId>
     	<version>4.8.2</version>
     	<scope>test</scope>
-    </dependency>
-    <dependency>
-    	<groupId>log4j</groupId>
-    	<artifactId>log4j</artifactId>
-    	<version>1.2.16</version>
     </dependency>
     <dependency>
     	<groupId>org.slf4j</groupId>

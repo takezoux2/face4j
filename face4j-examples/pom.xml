@@ -14,6 +14,13 @@
   <packaging>jar</packaging>  
   <description>examples for using the client</description>
   <url>https://github.com/mhendred/face4j</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
