@@ -2,13 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.face4j</groupId>
+  <groupId>com.github.mhendred.face4j</groupId>
   <artifactId>face4j</artifactId>
-  <version>1.5.1</version>
+  <version>1.5.2</version>
   <packaging>pom</packaging>
   <name>face4j</name>
 
   
+  <description>parent pom</description>
+  <url>https://github.com/mhendred/face4j</url>
   <developers>
   	<developer>
   		<id>mhendred</id>
