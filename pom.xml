@@ -20,6 +20,14 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   <issueManagement>
   	<system>github</system>
   	<url>https://github.com/mhendred/face4j/issues</url>
