@@ -27,7 +27,11 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
- <build>
+  <scm>
+  	<tag>1.5.2</tag>
+  	<url>git://github.com/mhendred/face4j.git</url>
+  </scm>
+  <build>
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
