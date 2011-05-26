@@ -27,7 +27,7 @@ package face4j.model;
  * @author Marlon Hendred
  *
  */
-abstract class Pair<A, B>
+public abstract class Pair<A, B>
 {	
 	public A first;
 	public B second;
@@ -42,4 +42,13 @@ abstract class Pair<A, B>
 		this.first  = first;
 		this.second = second;
 	}
+
+    public A getFirst() {
+        return first;
+    }
+
+    public B getSecond() {
+        return second;
+    }
+
 }
