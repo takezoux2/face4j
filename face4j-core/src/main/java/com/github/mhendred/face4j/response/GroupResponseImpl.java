@@ -36,10 +36,8 @@ import com.github.mhendred.face4j.model.Group;
 import com.github.mhendred.face4j.model.Photo;
 
 
-public final class GroupResponseImpl extends PhotoResponseImpl implements GroupResponse
-{
-	private static final Logger logger = LoggerFactory.getLogger(GroupResponse.class);
-	
+public final class GroupResponseImpl extends AbstractResponse implements GroupResponse
+{	
 	private final List<Group> groups;
 	
 	private final List<Photo> photos;
@@ -52,11 +50,6 @@ public final class GroupResponseImpl extends PhotoResponseImpl implements GroupR
 		{
 			groups = toGroupList(response.getJSONArray("groups"));
 			photos = toPhotoList(response.getJSONArray("photos"));
-			
-			if (logger.isDebugEnabled())
-			{
-				logger.debug(toString());
-			}
 		}
 		
 		catch (JSONException jex)

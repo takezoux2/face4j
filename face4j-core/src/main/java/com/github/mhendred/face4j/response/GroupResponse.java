@@ -27,8 +27,7 @@ import java.util.List;
 import com.github.mhendred.face4j.model.Group;
 import com.github.mhendred.face4j.model.Photo;
 
-
-public interface GroupResponse extends PhotoResponse 
+public interface GroupResponse 
 {
 	public List<Group> getGroups ();
 	
