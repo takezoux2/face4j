@@ -20,11 +20,11 @@ public abstract class BaseTest
 	
 	public BaseTest() throws IOException
 	{
-		twoFaces  = getJsonString("/data/photo2faces.json");
-		train     = getJsonString("/data/train.json");
-		saveTag   = getJsonString("/data/save.json");
-		removeTag = getJsonString("/data/remove.json");
-		status    = getJsonString("/data/status.json"); 
+		twoFaces  = getJsonString("/data/faces.recognize.json");
+		train     = getJsonString("/data/faces.train.json");
+		saveTag   = getJsonString("/data/tags.save.json");
+		removeTag = getJsonString("/data/tags.remove.json");
+		status    = getJsonString("/data/tags.status.json"); 
 	}
 	
 	private String getJsonString(String file) throws IOException
