@@ -38,6 +38,8 @@ import com.github.mhendred.face4j.model.Photo;
 import com.github.mhendred.face4j.model.RemovedTag;
 import com.github.mhendred.face4j.model.SavedTag;
 import com.github.mhendred.face4j.model.UserStatus;
+import com.github.mhendred.face4j.response.GetTagsResponse;
+import com.github.mhendred.face4j.response.GetTagsResponseImpl;
 import com.github.mhendred.face4j.response.GroupResponse;
 import com.github.mhendred.face4j.response.GroupResponseImpl;
 import com.github.mhendred.face4j.response.LimitsResponse;
@@ -245,7 +247,7 @@ public class DefaultFaceClient implements FaceClient
 				params.putAll(reqd.getMap());
 
 		final String json = executePost(baseURI.resolve(Api.GET_TAGS), params);
-		final PhotoResponse response = new PhotoResponseImpl(json);
+		final GetTagsResponse response = new GetTagsResponseImpl(json);
 		
 		return response.getPhotos();
 	}
