@@ -28,8 +28,6 @@ import static com.github.mhendred.face4j.response.ResponseHelper.toPhotoList;
 import java.util.List;
 
 import org.json.JSONException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.github.mhendred.face4j.exception.FaceClientException;
 import com.github.mhendred.face4j.model.Group;
