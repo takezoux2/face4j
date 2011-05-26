@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.mhendred.face4j</groupId>
   <artifactId>face4j</artifactId>
-  <version>1.5.2-SNAPSHOT</version>
+  <version>1.5.2</version>
   <packaging>pom</packaging>
   <name>face4j</name>
   <parent>
