@@ -18,6 +18,11 @@ public abstract class BaseTest
 	
 	protected final String status;
 	
+	protected final String group;
+	
+	protected final String tags;
+
+	
 	public BaseTest() throws IOException
 	{
 		twoFaces  = getJsonString("/data/faces.recognize.json");
@@ -25,6 +30,8 @@ public abstract class BaseTest
 		saveTag   = getJsonString("/data/tags.save.json");
 		removeTag = getJsonString("/data/tags.remove.json");
 		status    = getJsonString("/data/faces.status.json"); 
+		group	  = getJsonString("/data/faces.group.json");
+		tags	  = getJsonString("/data/tags.get.json");
 	}
 	
 	private String getJsonString(String file) throws IOException

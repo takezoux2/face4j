@@ -9,6 +9,10 @@ import org.junit.Test;
 
 import com.github.mhendred.face4j.exception.FaceClientException;
 import com.github.mhendred.face4j.model.Photo;
+import com.github.mhendred.face4j.response.GetTagsResponse;
+import com.github.mhendred.face4j.response.GetTagsResponseImpl;
+import com.github.mhendred.face4j.response.GroupResponse;
+import com.github.mhendred.face4j.response.GroupResponseImpl;
 import com.github.mhendred.face4j.response.PhotoResponse;
 import com.github.mhendred.face4j.response.PhotoResponseImpl;
 import com.github.mhendred.face4j.response.RemoveTagResponse;
@@ -24,8 +28,6 @@ import com.github.mhendred.face4j.tests.BaseTest;
 
 public class ResponseTests extends BaseTest
 {
-
-	
 	public ResponseTests() throws IOException
 	{
 		super();
@@ -76,4 +78,21 @@ public class ResponseTests extends BaseTest
 		
 		assertEquals(1, sr.getTrainingStatus().size());
 	}
+	
+	@Test
+	public void groupRespons () throws Exception
+	{
+		GroupResponse gr = new GroupResponseImpl(group);
+		
+		assertEquals(2, gr.getGroups().size());
+		assertEquals(2, gr.getPhotos().size());
+	}
+	
+	@Test
+	public void getTagsResponse () throws Exception
+	{
+		GetTagsResponse gt = new GetTagsResponseImpl(tags);
+		
+		assertEquals(23, gt.getPhotos().size());
+	}	
 }
