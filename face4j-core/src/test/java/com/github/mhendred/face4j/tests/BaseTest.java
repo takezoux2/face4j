@@ -24,7 +24,7 @@ public abstract class BaseTest
 		train     = getJsonString("/data/faces.train.json");
 		saveTag   = getJsonString("/data/tags.save.json");
 		removeTag = getJsonString("/data/tags.remove.json");
-		status    = getJsonString("/data/tags.status.json"); 
+		status    = getJsonString("/data/faces.status.json"); 
 	}
 	
 	private String getJsonString(String file) throws IOException
