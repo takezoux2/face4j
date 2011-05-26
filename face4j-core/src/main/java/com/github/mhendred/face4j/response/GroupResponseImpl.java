@@ -23,6 +23,7 @@
 package com.github.mhendred.face4j.response;
 
 import static com.github.mhendred.face4j.response.ResponseHelper.toGroupList;
+import static com.github.mhendred.face4j.response.ResponseHelper.toPhotoList;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ import org.slf4j.LoggerFactory;
 
 import com.github.mhendred.face4j.exception.FaceClientException;
 import com.github.mhendred.face4j.model.Group;
+import com.github.mhendred.face4j.model.Photo;
 
 
 public final class GroupResponseImpl extends PhotoResponseImpl implements GroupResponse
@@ -40,6 +42,8 @@ public final class GroupResponseImpl extends PhotoResponseImpl implements GroupR
 	
 	private final List<Group> groups;
 	
+	private final List<Photo> photos;
+	
 	public GroupResponseImpl(String json) throws FaceClientException
 	{
 		super(json);
@@ -47,6 +51,7 @@ public final class GroupResponseImpl extends PhotoResponseImpl implements GroupR
 		try
 		{
 			groups = toGroupList(response.getJSONArray("groups"));
+			photos = toPhotoList(response.getJSONArray("photos"));
 			
 			if (logger.isDebugEnabled())
 			{
@@ -65,6 +70,11 @@ public final class GroupResponseImpl extends PhotoResponseImpl implements GroupR
 		return groups;
 	}
 
+	public List<Photo> getPhotos ()
+	{
+		return photos;
+	}
+	
 	public String toString ()
 	{
 		return super.toString();

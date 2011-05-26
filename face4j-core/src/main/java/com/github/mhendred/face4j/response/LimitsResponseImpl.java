@@ -55,7 +55,6 @@ public class LimitsResponseImpl extends AbstractResponse implements LimitsRespon
 		
 		try
 		{		
-			// usage stats
 			final JSONObject usage = response.getJSONObject("usage");
 			namespaceRemaining = optInt(usage, "namespace_remaining");
 			namespaceUsed      = optInt(usage, "namespace_used");

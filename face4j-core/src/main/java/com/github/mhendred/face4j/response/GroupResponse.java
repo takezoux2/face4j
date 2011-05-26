@@ -25,10 +25,13 @@ package com.github.mhendred.face4j.response;
 import java.util.List;
 
 import com.github.mhendred.face4j.model.Group;
+import com.github.mhendred.face4j.model.Photo;
 
 
 public interface GroupResponse extends PhotoResponse 
 {
-	public List<Group> getGroups();
+	public List<Group> getGroups ();
+	
+	public List<Photo> getPhotos ();
 	
 }
