@@ -7,25 +7,23 @@ import org.slf4j.LoggerFactory;
 
 import com.github.mhendred.face4j.exception.FaceClientException;
 
-
 abstract class AbstractResponse
 {
+	private static final int NUM_TABS = 2;
+	
 	protected static final Logger logger = LoggerFactory.getLogger(AbstractResponse.class);;
 	
 	protected final JSONObject response;
 	
 	protected AbstractResponse(final String json) throws FaceClientException
 	{
-		
-		
 		try 
 		{
 			response = new JSONObject(json);
 			
 			if (logger.isDebugEnabled())
 			{
-				logger.debug("JSON response...");
-				logger.debug(response.toString(2));
+				logger.debug(toString());
 			}
 		}
 		
@@ -40,7 +38,7 @@ abstract class AbstractResponse
 	{
 		try
 		{
-			return response.toString(2);
+			return response.toString(NUM_TABS);
 		}
 		
 		catch (JSONException e)
