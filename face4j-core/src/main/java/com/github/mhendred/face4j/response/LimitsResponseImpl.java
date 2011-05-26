@@ -33,22 +33,22 @@ import com.github.mhendred.face4j.exception.FaceClientException;
 
 public class LimitsResponseImpl extends AbstractResponse implements LimitsResponse
 {
-	private String restTimeString;
+	private final Date resetDate;
 
-	private Date resetDate;
+	private final int remaining;
 
+	private final int limit;
+
+	private final int used;
+	
 	private int namespaceLimit;
 	
 	private int namespaceUsed;
 	
 	private int namespaceRemaining;
 	
-	private int remaining;
-
-	private int limit;
-
-	private int used;
-
+	private String restTimeString;
+	
 	public LimitsResponseImpl(final String json) throws FaceClientException
 	{
 		super(json);
@@ -131,18 +131,6 @@ public class LimitsResponseImpl extends AbstractResponse implements LimitsRespon
 	@Override
 	public String toString ()
 	{
-		StringBuilder builder = new StringBuilder();
-		
-		builder.append("LimitsResponseImpl [limit=").append(limit)
-			   .append(", namespaceLimit=").append(namespaceLimit)
-			   .append(", namespaceRemaining=").append(namespaceRemaining)
-			   .append(", namespaceUsed=").append(namespaceUsed)
-			   .append(", remaining=").append(remaining)
-			   .append(", resetDate=").append(resetDate)
-			   .append(", restTimeString=").append(restTimeString)
-			   .append(", used=").append(used).append("]");
-		
-		return builder.toString();
+		return super.toString();
 	}
-
 }
